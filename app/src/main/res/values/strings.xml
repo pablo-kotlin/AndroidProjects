@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Cheesecake Place</string>
+
+    <string name="button_main">Mis sitios</string>
+    <string name="button_explore">Explorar</string>
+    <string name="button_profile">Mi perfil</string>
+
+    <string name="button_add_new_cake">Añadir Nueva Tarta</string>
+    <string name="button_logout">Salir</string>
+    <string name="button_login">Login</string>
+    <string name="button_sign_in">Crear Cuenta</string>
+    <string name="button_delete">Eliminar Tarta</string>
+    <string name="explore_button_search">Buscar</string>
+    <string name="add_cake_button_save">Guardar</string>
+
+    <string name="item_cake_picture">Fotografía Tarta de queso</string>
+
+    <string name="input_hint_user_email">e-mail</string>
+    <string name="input_hint_password">Contraseña</string>
+
+    <string name="mandatory_field">*Obligatorio</string>
+
+    <string name="add_new_cake_title">Rellene los siguientes campos para añadir una nueva tarta de queso</string>
+    <string name="input_hint_place_name">Nombre del establecimiento</string>
+    <string name="input_hint_city_address">Introduzca su ciudad</string>
+    <string name="input_hint_place_city">Localidad</string>
+    <string name="input_hint_place_postal_code">Código Postal</string>
+    <string name="input_hint_place_website">Sitio Web</string>
+    <string name="title_upload_img">Seleccione una fotografía de la tarta</string>
+    <string name="cake_photo">Fotografía de la tarta</string>
+    <string name="add_cake_message_valid">Revise los campos obligatorios</string>
+
+    <string name="title_search_mode">Indique en qué ciudad desea buscar los mejores restaurantes con tartas de queso</string>
+    <string name="list_of_restaurants">Listados de Restaurantes</string>
+
+    <string name="dialog_delete_title">¿Desea eliminar esta tarta?</string>
+    <string name="dialog_delete_confirm">Aceptar</string>
+    <string name="dialog_delete_cancel">Cancelar</string>
+
+    <string name="my_cakes_title">Tus tartas de queso favoritas</string>
+    <string name="website_access">¿Desea acceder a su página web?</string>
+    <string name="error_website">No hay definida una web para este resturante</string>
+    <string name="input_hint_username">Introduzca un nombre de usuario</string>
+    <string name="button_save">Guardar</string>
+    <string name="btn_back">ATRÁS</string>
+    <string name="rating_bar_cake">Valoración</string>
+
+</resources>

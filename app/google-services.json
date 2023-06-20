@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "351480775636",
+    "project_id": "cheesecake-place",
+    "storage_bucket": "cheesecake-place.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:351480775636:android:b34940ca425cfe06c40c41",
+        "android_client_info": {
+          "package_name": "com.proyectoilerna.cheesecakeplace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "351480775636-fctvabi18pu1ke7d1boqd9ebm034ka69.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDu5nHyBLiEm2Njr7Lp8KRmpdvOH_AbtaM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "351480775636-fctvabi18pu1ke7d1boqd9ebm034ka69.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

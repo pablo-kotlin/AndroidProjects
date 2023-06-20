@@ -1,0 +1,12 @@
+<resources>
+    <color name="primaryColor">#fff59d</color>
+    <color name="primaryLightColor">#ffffcf</color>
+    <color name="primaryDarkColor">#cbc26d</color>
+    <color name="secondaryColor">#E65427</color>
+    <color name="secondaryLightColor">#ffd0b0</color>
+    <color name="secondaryDarkColor">#c96f53</color>
+    <color name="primaryTextColor">#4e342e</color>
+    <color name="secondaryTextColor">#4e342e</color>
+    <color name="lightBlue">#83F5FF</color>
+    <color name="darkBlue">#52A1FF</color>
+</resources>

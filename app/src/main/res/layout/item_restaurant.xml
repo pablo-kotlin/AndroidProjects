@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    app:cardCornerRadius="@dimen/min_padding"
+    app:cardElevation="@dimen/min_padding"
+    app:cardBackgroundColor="@color/primaryDarkColor"
+    android:layout_marginHorizontal="@dimen/default_padding"
+    android:layout_marginVertical="@dimen/min_padding"
+    android:padding="@dimen/large_padding">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/rest_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/rest_name"
+            tools:text="Nombre Restaurante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/min_padding"
+            android:textAlignment="center"
+            android:textAppearance="?attr/textAppearanceHeadline5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/rest_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textAppearance="?attr/textAppearanceSubtitle1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rest_name"
+            tools:text="Ciudad"/>
+
+        <TextView
+            android:id="@+id/rest_postal_code"
+            tools:text="C.P.: 50001"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textAppearance="?attr/textAppearanceSubtitle1"            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rest_city"/>
+
+            <LinearLayout
+                android:id="@+id/linear_layout_rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:foregroundGravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rest_postal_code">
+
+            <RatingBar
+                android:id="@+id/rest_rating_stars"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:isIndicator="true"/>
+
+            <TextView
+                android:id="@+id/rest_rating_number"
+                tools:text="5.0"
+                android:layout_width="@dimen/number_padding"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:textAppearance="?attr/textAppearanceSubtitle2"/>
+
+            </LinearLayout>
+
+        <TextView
+            android:id="@+id/rest_num_votes"
+            tools:text="150 valoraciones"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textAppearance="?attr/textAppearanceSubtitle2"
+            android:paddingBottom="@dimen/min_padding"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linear_layout_rating"/>
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="@dimen/min_padding"
+                android:background="@color/primaryDarkColor"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

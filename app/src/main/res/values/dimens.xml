@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_padding">16dp</dimen>
+    <dimen name="min_padding">8dp</dimen>
+    <dimen name="large_padding">40dp</dimen>
+    <dimen name="max_padding">100dp</dimen>
+    <dimen name="extra_large_padding">300dp</dimen>
+    <dimen name="number_padding">30dp</dimen>
+</resources>

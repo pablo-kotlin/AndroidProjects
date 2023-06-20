@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="@dimen/default_padding">
+
+    <TextView
+        android:id="@+id/item_cake_restaurant"
+        tools:text="Nombre Restaurante"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/min_padding"
+        android:textAppearance="?attr/textAppearanceHeadline6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/item_cake_city"
+        tools:text="Ciudad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceSubtitle2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_cake_restaurant"/>
+
+    <TextView
+        android:id="@+id/item_cake_postcode"
+        tools:text="C.P.: 50001"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?attr/textAppearanceSubtitle2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_cake_city"/>
+
+    <ImageView
+        android:id="@+id/item_cake_photo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/item_cake_picture"
+        app:layout_constraintDimensionRatio="H, 4:3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_cake_postcode"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <RatingBar
+        android:id="@+id/rating_stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/min_padding"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:isIndicator="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_cake_photo"/>
+
+    <TextView
+        android:id="@+id/item_cake_rating"
+        tools:text="5.0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/min_padding"
+        android:textAlignment="center"
+        android:textAppearance="?attr/textAppearanceButton"
+        app:layout_constraintBottom_toBottomOf="@+id/rating_stars"
+        app:layout_constraintStart_toEndOf="@id/rating_stars"
+        app:layout_constraintTop_toBottomOf="@id/item_cake_photo"/>
+
+    <ImageButton
+        android:id="@+id/button_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_delete"
+        android:layout_marginTop="@dimen/min_padding"
+        android:background="?attr/selectableItemBackground"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/item_cake_photo"
+        android:contentDescription="@string/button_delete"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/min_padding"
+        android:background="@color/primaryDarkColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

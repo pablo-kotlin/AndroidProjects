@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/default_padding"
+    android:orientation="vertical"
+    tools:context=".ui.AddCakeActivity">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        tools:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/add_cake_title"
+        android:textAlignment="center"
+        android:text="@string/add_new_cake_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_place_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_hint_place_name"
+            app:endIconMode="clear_text"
+            app:helperText="@string/mandatory_field"
+            app:startIconDrawable="@drawable/ic_shop"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/add_cake_title">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/add_cake_place_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="50"
+                android:minLines="1"
+                android:maxLines="1"
+                android:inputType="textCapWords"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_add_cake"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/input_place_name"
+            android:baselineAligned="true">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_place_city"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/input_hint_place_city"
+                app:endIconMode="clear_text"
+                app:helperText="@string/mandatory_field"
+                app:startIconDrawable="@drawable/ic_city"
+                android:layout_marginEnd="@dimen/min_padding">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/add_cake_place_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="50"
+                    android:minLines="1"
+                    android:maxLines="1"
+                    android:inputType="textCapWords"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_place_postal_code"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/input_hint_place_postal_code"
+                    app:endIconMode="clear_text"
+                    app:startIconDrawable="@drawable/ic_postal_code"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/add_cake_postal_code"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLength="5"
+                        android:minLines="1"
+                        android:maxLines="1"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_place_website"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/input_hint_place_website"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/ic_shop"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linear_layout_add_cake">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/add_cake_place_website"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="50"
+            android:minLines="1"
+            android:maxLines="1"
+            android:inputType="textCapWords"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textview_upload_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/title_upload_img"
+        android:textAlignment="center"
+        android:textAppearance="?attr/textAppearanceBody1"
+        android:paddingTop="@dimen/min_padding"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/input_place_website"/>
+
+    <ImageView
+        android:id="@+id/add_cake_photo"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitCenter"
+        android:contentDescription="@string/cake_photo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_upload_img"
+        app:layout_constraintDimensionRatio="H, 3:2"/>
+
+    <ImageButton
+        android:id="@+id/button_upload_img"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/ic_select_photo"
+        android:background="?attr/selectableItemBackground"
+        android:contentDescription="@string/title_upload_img"
+        app:layout_constraintStart_toStartOf="@id/add_cake_photo"
+        app:layout_constraintEnd_toEndOf="@id/add_cake_photo"
+        app:layout_constraintTop_toTopOf="@id/add_cake_photo"
+        app:layout_constraintBottom_toBottomOf="@id/add_cake_photo"/>
+
+    <RatingBar
+        android:id="@+id/rating_stars_cake"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/min_padding"
+        android:isIndicator="false"
+        android:contentDescription="@string/rating_bar_cake"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_upload_img"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_add_cake_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_cake_button_save"
+        android:textColor="@color/secondaryDarkColor"
+        app:icon="@drawable/ic_upload"
+        app:layout_constraintTop_toBottomOf="@id/rating_stars_cake"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
